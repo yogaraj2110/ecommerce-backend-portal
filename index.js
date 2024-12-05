@@ -21,6 +21,7 @@ const corsOptions = {
     origin: process.env.CORS_ALLOW_ORIGIN,
     credentials: true,
 };
+console.log('CORS Options:', corsOptions);
 
 // Middleware
 app.use(express.json());
