@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-require('./db/connect');
+// require('./db/connect');
 const cors = require('cors');
 
 // import routing
@@ -32,7 +32,7 @@ app.use('/employee', employeeRouter);
 app.use('/department', departmentRouter);
 app.use('/role', roleRouter);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
     console.log(`App is ruuning on  Port ${PORT}`);
 })
